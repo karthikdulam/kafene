@@ -33,14 +33,6 @@ $(document).ready(() => {
         rowMaking(item, pos);
       });
     });
-    setInterval(() => {
-      var search = document.getElementById("search-box").value.length;
-      if (search > 0) {
-        $(`#cross`).show();
-      } else {
-        $(`#cross`).hide();
-      }
-    }, 0);
 
     $(`form`).submit((e) => {
       var search = document.getElementById("search-box").value;
